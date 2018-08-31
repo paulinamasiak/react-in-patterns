@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import RenderPropsPattern from './render-props-pattern';
+import ControlledComponent from './controlled-component';
+import RenderProps from './render-props';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,7 +13,8 @@ class App extends Component {
           <h1 className="app__title">Welcome to React in Patterns</h1>
         </header>
         <main className="app__main">
-          <RenderPropsPattern />
+          <ControlledComponent />
+          <RenderProps />
         </main>
       </div>
     );
