@@ -5,7 +5,7 @@ class LoginForm extends Component {
     super(props);
 
     this.state = {
-      username: '',
+      email: '',
       password: '',
     };
 
@@ -24,31 +24,39 @@ class LoginForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    console.log(`${this.state.username} form submited!`);
+    console.log(`${this.state.email} form submited!`);
   }
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Username
+        <div className="form-group">
+          <label htmlFor="exampleInputEmail1">Email address</label>
           <input
-            type="text"
-            name="username"
+            id="exampleInputEmail1"
+            className="form-control"
+            type="email"
+            name="email"
+            placeholder="Enter email"
             value={this.state.username}
             onChange={this.handleInputChange}
           />
-        </label>
-        <label>
-          Password
+        </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputPassword1">Password</label>
           <input
+            id="exampleInputPassword1"
+            className="form-control"
             type="password"
             name="password"
+            placeholder="Password"
             value={this.state.password}
             onChange={this.handleInputChange}
           />
-        </label>
-        <button>Log in</button>
+        </div>
+        <button className="btn btn-primary" type="submit">
+          Log in
+        </button>
       </form>
     );
   }
