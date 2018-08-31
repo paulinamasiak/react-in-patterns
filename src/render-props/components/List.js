@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { noop } from 'lodash';
 
 const List = ({ items, itemRenderer }) => (
-  <div className="list">{items.map(itemRenderer)}</div>
+  <div className="list-group text-center">{items.map(itemRenderer)}</div>
 );
 
 List.propTypes = {
