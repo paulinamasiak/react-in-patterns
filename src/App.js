@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ControlledComponent from './controlled-component';
+import ControlledComponents from './controlled-components';
 import RenderProps from './render-props';
 import logo from './logo.svg';
 
@@ -13,7 +13,7 @@ class App extends Component {
         </header>
         <main>
           <section className="app-section">
-            <ControlledComponent />
+            <ControlledComponents />
           </section>
           <section className="app-section">
             <RenderProps />
