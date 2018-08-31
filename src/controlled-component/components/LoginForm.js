@@ -24,7 +24,7 @@ class LoginForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    console(`${this.state.username} form submited!`);
+    console.log(`${this.state.username} form submited!`);
   }
 
   render() {
