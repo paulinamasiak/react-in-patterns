@@ -11,17 +11,21 @@ body {
 
 .app-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 9.3rem;
+  padding: 1.25rem;
   color: white;
 }
 
 .app-title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .app-intro {
   font-size: large;
+}
+
+.app-section {
+  margin: 3rem 0;
 }
 
 @keyframes App-logo-spin {

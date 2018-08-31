@@ -12,10 +12,10 @@ const itemRederer = ({ id, name }) => (
 );
 
 const RenderPropsPattern = () => (
-  <section className="container">
-    <h1>Render props pattern example</h1>
+  <div className="container">
+    <h1 className="h2 mb-4">Render props pattern example</h1>
     <List items={contacts} itemRenderer={itemRederer} />
-  </section>
+  </div>
 );
 
 export default RenderPropsPattern;

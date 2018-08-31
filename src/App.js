@@ -12,8 +12,12 @@ class App extends Component {
           <h1 className="app-title">Welcome to React in Patterns</h1>
         </header>
         <main>
-          <ControlledComponent />
-          <RenderProps />
+          <section className="app-section">
+            <ControlledComponent />
+          </section>
+          <section className="app-section">
+            <RenderProps />
+          </section>
         </main>
       </div>
     );
