@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ControlledComponents from './controlled-components';
+import UncontrolledComponents from './uncontrolled-components';
 import RenderProps from './render-props';
 import logo from './logo.svg';
 
@@ -14,6 +15,9 @@ class App extends Component {
         <main>
           <section className="app-section">
             <ControlledComponents />
+          </section>
+          <section className="app-section">
+            <UncontrolledComponents />
           </section>
           <section className="app-section">
             <RenderProps />
