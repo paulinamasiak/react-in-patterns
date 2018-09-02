@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ControlledComponents from './controlled-components';
 import UncontrolledComponents from './uncontrolled-components';
 import RenderProps from './render-props';
+import HigherOrderComponent from './higher-order-component';
 import logo from './logo.svg';
 
 class App extends Component {
@@ -21,6 +22,9 @@ class App extends Component {
           </section>
           <section className="app-section">
             <RenderProps />
+          </section>
+          <section className="app-section">
+            <HigherOrderComponent />
           </section>
         </main>
       </div>
