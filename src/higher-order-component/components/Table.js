@@ -19,7 +19,7 @@ const Table = ({ items, columnNames, rowRenderer }) => (
 
 Table.propTypes = {
   items: PropTypes.array,
-  columnNames: PropTypes.array,
+  columnNames: PropTypes.arrayOf(PropTypes.string),
   rowRenderer: PropTypes.func,
 };
 
