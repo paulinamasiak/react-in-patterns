@@ -18,14 +18,14 @@ const Table = ({ items, columnNames, rowRenderer }) => (
 );
 
 Table.propTypes = {
-  items: PropTypes.array,
   columnNames: PropTypes.arrayOf(PropTypes.string),
+  items: PropTypes.array,
   rowRenderer: PropTypes.func,
 };
 
 Table.defaultProps = {
-  items: [],
   columnNames: [],
+  items: [],
   rowRenderer: noop,
 };
 
