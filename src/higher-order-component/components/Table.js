@@ -6,8 +6,10 @@ const Table = ({ items, columnNames, rowRenderer }) => (
   <table className="table table-bordered">
     <thead>
       <tr>
-        {columnNames.map((columnName) => (
-          <th scope="col">{columnName}</th>
+        {columnNames.map((columnName, index) => (
+          <th key={index} scope="col">
+            {columnName}
+          </th>
         ))}
       </tr>
     </thead>
