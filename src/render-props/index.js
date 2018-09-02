@@ -11,11 +11,11 @@ const itemRederer = ({ id, name }) => (
   </div>
 );
 
-const RenderPropsPattern = () => (
+const RenderProps = () => (
   <div className="container">
-    <h1 className="h2 mb-4">Render props pattern example</h1>
+    <h1 className="h2 mb-4">Render props</h1>
     <List items={contacts} itemRenderer={itemRederer} />
   </div>
 );
 
-export default RenderPropsPattern;
+export default RenderProps;

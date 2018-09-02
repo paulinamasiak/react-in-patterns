@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ControlledComponents from './controlled-components';
-import UncontrolledComponents from './uncontrolled-components';
+import ControlledComponent from './controlled-component';
+import UncontrolledComponent from './uncontrolled-component';
 import RenderProps from './render-props';
 import HigherOrderComponent from './higher-order-component';
 import logo from './logo.svg';
@@ -15,10 +15,10 @@ class App extends Component {
         </header>
         <main>
           <section className="app-section">
-            <ControlledComponents />
+            <ControlledComponent />
           </section>
           <section className="app-section">
-            <UncontrolledComponents />
+            <UncontrolledComponent />
           </section>
           <section className="app-section">
             <RenderProps />
