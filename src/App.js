@@ -3,6 +3,7 @@ import ControlledComponent from './controlled-component';
 import UncontrolledComponent from './uncontrolled-component';
 import RenderProps from './render-props';
 import HigherOrderComponent from './higher-order-component';
+import ContainerComponent from './container-component';
 import logo from './logo.svg';
 
 const App = () => (
@@ -23,6 +24,9 @@ const App = () => (
       </section>
       <section className="app-section">
         <HigherOrderComponent />
+      </section>
+      <section className="app-section">
+        <ContainerComponent />
       </section>
     </main>
   </div>
