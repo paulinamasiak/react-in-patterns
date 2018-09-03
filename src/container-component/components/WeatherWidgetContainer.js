@@ -12,12 +12,12 @@ class WeatherWidgetContainer extends Component {
 
   componentDidMount() {
     fetch('http://demo7840259.mockable.io/weather')
-    .then((resp) => resp.json())
-    .then((data) => {
-      this.setState({
-        data,
+      .then((resp) => resp.json())
+      .then((data) => {
+        this.setState({
+          data,
+        });
       });
-    });
   }
 
   render() {
